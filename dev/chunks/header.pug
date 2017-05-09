@@ -1,0 +1,16 @@
+header.wrapper.header#header
+    .container
+        .header__wrapper
+            a(href="#").header__mobile-menu.js-mobile-menu
+                span
+            a(href="#").header__logo
+                img(src="img/logo.svg" alt="logo")
+            nav.header__nav
+                ul.header__menu
+                    - var menu = ['Подарочный сертификат', 'Разгон-Уикэнд', 'Корпоративы', 'Школные группы', 'Дни Рождения','Акции'  ]
+                    each menuItem in menu
+                        li.header__menu-item
+                            a(href="#").header__menu-link= menuItem
+            .header__info
+                a(href="callto:+7 456 789-67-78 ").header__phone +7 456 789-67-78 
+                .header__time Пн-Вс, с 9:00 до 22:00 

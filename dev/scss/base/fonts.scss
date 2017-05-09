@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("fonts/OpenSansRegular/OpenSansRegular.eot");
+    src: url("fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"), url("fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("fonts/OpenSansBold/OpenSansBold.eot");
+    src: url("fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"), url("fonts/OpenSansBold/OpenSansBold.woff") format("woff"), url("fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "OpenSansSemiBold";
+    src: url("fonts/OpenSansSemiBold/OpenSansSemiBold.eot");
+    src: url("fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix")format("embedded-opentype"), url("fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"), url("fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('fonts/MERRIWEATHER/Merriweather-Regular.eot');
+    src: url('fonts/MERRIWEATHER/Merriweather-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/MERRIWEATHER/Merriweather-Regular.woff') format('woff'), url('fonts/MERRIWEATHER/Merriweather-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('fonts/Proxima/ProximaNova-Regular.eot');
+    src: url('fonts/Proxima/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/Proxima/ProximaNova-Regular.woff') format('woff'), url('fonts/Proxima/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('fonts/Proxima/ProximaNova-Semibold.eot');
+    src: url('fonts/Proxima/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'), url('fonts/Proxima/ProximaNova-Semibold.woff') format('woff'), url('fonts/Proxima/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'Proxima Nova Bold';
+	src: url('fonts/Proxima/ProximaNova-Bold.eot');
+	src: url('fonts/Proxima/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Proxima/ProximaNova-Bold.woff') format('woff'),
+		url('fonts/Proxima/ProximaNova-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Circe';
+	src: url('fonts/Circe/Circe-Bold.eot');
+	src: url('fonts/Circe/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Circe/Circe-Bold.woff') format('woff'),
+		url('fonts/Circe/Circe-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src: url('fonts/Circe/Circe-Regular.eot');
+	src: url('fonts/Circe/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Circe/Circe-Regular.woff') format('woff'),
+		url('fonts/Circe/Circe-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+        font-family: "UbuntuRegular";
+        src: url("fonts/UbuntuRegular/UbuntuRegular.eot");
+        src: url("fonts/UbuntuRegular/UbuntuRegular.eot?#iefix")format("embedded-opentype"),
+        url("fonts/UbuntuRegular/UbuntuRegular.woff") format("woff"),
+        url("fonts/UbuntuRegular/UbuntuRegular.ttf") format("truetype");
+        font-style: normal;
+        font-weight: normal;
+}
+
+
+$opensans: "OpenSansRegular", Arial, sans-serif;
+$opensansBold: "OpenSansBold", Arial, sans-serif;
+$opensansSemiBold: "OpenSansSemiBold", Arial, sans-serif;
+$mediaerriweather: 'Merriweather';
+$proxima: 'Proxima Nova Rg';
+$proximaSemi: 'Proxima Nova Lt';
+$proximaBold:'Proxima Nova Bold';
+$circe: 'Circe';
+$ubuntu : 'UbuntuRegular';

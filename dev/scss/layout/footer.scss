@@ -1,0 +1,130 @@
+.footer {
+    padding-top: 53px;
+    padding-bottom: 62px;
+    @media (max-width: $screen-sm-max) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: $screen-sm-max) {
+            display: block;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        margin-left: 48px;
+        padding-top: 9px;
+        @media (max-width: $screen-sm-max) {
+            display: block;
+            margin-left: 0;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__menu-list {
+        list-style-type: none;
+
+        @media (min-width: $screen-md-min){
+            &:not(:last-child) {
+                margin-right: 39px;
+            }
+        }
+
+
+    }
+
+    &__menu-item {
+        margin-bottom: 8px;
+    }
+
+    &__menu-link {
+        color: #64a8d8;
+        font-family: $ubuntu;
+        font-size: 15px;
+    }
+
+    &__logo {
+        width: 115px;
+        height: 112px;
+        margin-right: 107px;
+        display: block;
+
+        img {
+            width: 100%;
+        }
+        @media (max-width: $screen-sm-max) {
+            display: none;
+        }
+    }
+
+    &__social {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    &__social-link {
+        width: 30px;
+        height: 30px;
+        margin-right: 13px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        display: block;
+        position: relative;
+        transition: 0.3s ease;
+
+        &:before {
+            content: '';
+            @include position(absolute, 0 0 0 0);
+            margin: auto;
+        }
+
+        &--vk {
+            &:before {
+                @include sprite($vk);
+            }
+        }
+
+        &--fb {
+            &:before {
+                @include sprite($fb);
+            }
+        }
+
+        &--tw {
+            &:before {
+                @include sprite($tw);
+            }
+        }
+
+        &:hover {
+            border: 1px solid #cacaca;
+            background: #cacaca;
+        }
+    }
+
+    &__copyright {
+        margin-right: 18px;
+    }
+
+    &__made-by {
+        color: #343434;
+        font-size: 15px;
+        font-family: $ubuntu;
+
+        span {
+            display: block;
+            margin-bottom: 7px;
+        }
+
+        a {
+            color: #64a8d8;
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+}
