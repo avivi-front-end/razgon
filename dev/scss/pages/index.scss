@@ -1320,6 +1320,11 @@ padding: 15px;
             background-repeat: no-repeat;
             background-position: calc(100% - 15px) 50%;
         }
+        &.error{
+            background-image: url("../img/error.png");
+            background-repeat: no-repeat;
+            background-position: calc(100% - 15px) 50%;
+        }
     }
 
     &__select {
