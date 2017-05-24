@@ -74,7 +74,13 @@ $(function() {
         return this.optional(element) || value.replace(/\D/g, '').length == 11
     }, "Введите правильный номер телефона");
 
-    $('#reserveForm').validate({
+    var $reserveForm = $('#reserveForm');
+
+    $reserveForm.on('submit', function() {
+       return $reserveFormValidate.form()
+   })
+
+    var $reserveFormValidate = $reserveForm.validate({
         rules: {
             name: {
                 required: true,
@@ -194,11 +200,10 @@ var menu = (function() {
             $menu.slideUp()
         } else {
             $(this).addClass('active')
-            $menu.slideDown()
         }
 
     })
-})()
+})
 
 
 var mapStyle = [
