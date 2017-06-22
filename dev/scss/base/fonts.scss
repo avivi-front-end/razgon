@@ -53,6 +53,16 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Proxima Nova Th';
+	src: url('fonts/Proxima/ProximaNovaT-Thin.eot');
+	src: url('fonts/Proxima/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Proxima/ProximaNovaT-Thin.woff') format('woff'),
+		url('fonts/Proxima/ProximaNovaT-Thin.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 @font-face {
 	font-family: 'Circe';
@@ -92,5 +102,6 @@ $mediaerriweather: 'Merriweather';
 $proxima: 'Proxima Nova Rg';
 $proximaSemi: 'Proxima Nova Lt';
 $proximaBold:'Proxima Nova Bold';
+$proximaThin: 'Proxima Nova Th';
 $circe: 'Circe';
 $ubuntu : 'UbuntuRegular';

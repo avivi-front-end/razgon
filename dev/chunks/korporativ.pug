@@ -1,0 +1,254 @@
+.pop-up(style="display:none;")#pop-up
+    .pop-up__title Заказать рассчет
+    .pop-up__form
+        form#pop-up-form
+            .reserve__form-group
+                label.reserve__label Ваше имя
+                input(type="text" placeholder="Например: Сергей" name="name").reserve__input
+            .reserve__form-group
+                label.reserve__label Телефон
+                input(type="text" placeholder="+7 ___ ___-__-__" name="phone").reserve__input.js-phone
+            button(type="submit").reserve__submit.pop-up__btn Отправить 
+            .pop-up__helper Менеджер перезвонит в течение 15 минут и уточнит все нюансы   
+section.top-info
+    img(src="img/main.jpg" alt="").top-info__mobile-img
+    video(autoplay muted loop)
+        source(src="video/banner.mp4")
+    .container
+        .top-info__title Коропоратив в «Разгоне»
+        .top-info__sub-title.
+            отличный способ сплотить команду. Чтобы сделать вечер незабываемым, наши аниматоры разработали<br>
+            N программ и квестов для тимбилдинга. Только живые эмоции! Только чистый адреналин!
+        a(href="#reserveForm").top-info__btn.js-scroll Забронировать время
+
+section.how-it
+    .container
+        .how-it__title.section-title Как проходит мероприятие
+        .how-it__parts
+            .row
+                .how-it__item-wrapper  
+                    .how-it__item   
+                        .how-it__inner
+                            .how-it__item-title Раздевалки и душевые
+                            .how-it__text.
+                                Чтобы подготовиться к корпоративу в «Разгоне», сотрудники
+                                переодеваются в спортивную одежду. Для этого мы построили
+                                просторные раздевалки, душевые и личные шкафчики для вещей+
+                .how-it__item-wrapper  
+                    .how-it__item   
+                        .how-it__inner
+                            .how-it__item-title Разминка
+                            .how-it__text.
+                                Инструкторы батутного парка помогают разогреть участникам
+                                мышцы и суставы и настраивают на веселье. А еще они объясняют
+                                технику безопасности и с радостью отвечают на любые вопросы
+                            .how-it__images
+                                a(href="img/how-it-1.jpg" data-fancybox).how-it__images-link
+                                    img(src="img/how-it-1.jpg" alt="")
+                                a(href="img/how-it-2.jpg" data-fancybox).how-it__images-link
+                                    img(src="img/how-it-2.jpg" alt="")        
+                .how-it__item-wrapper  
+                    .how-it__item   
+                        .how-it__inner
+                            .how-it__item-title Тимбилдинг
+                            .how-it__text.
+                                Крутые квесты и командные тренировки укрепляют дружбу
+                                в коллективе и оставляют сотрудникам незабываемые
+                                впечатления. Все развлечения в «Разгоне» надолго заряжают
+                                хорошим настроением и укрепляют корпоративный
+                                дух и командные ценности
+                            a(data-fancybox data-src="#pop-up" href="javascript:;").how-it__item-btn Заказать расчёт     
+                .how-it__item-wrapper  
+                    .how-it__item   
+                        .how-it__inner
+                            .how-it__item-title Отдых
+                            .how-it__text.
+                                Вволю командообразовавшись, продолжаем веселиться
+                                за столиками со вкусной едой и качественными напитками. 
+                                Самое время отметить свои подвиги на батутном поприще 
+                                и вдохновиться для работы!                       
+section.people
+    .people__slider.js-people
+        - for(var i=0;i < 5;i++)
+            .people__slide
+                .container.people__container
+                    .people__image
+                        img(src="img/slide.jpg" alt="")
+                    .row
+                        .col-lg-5.col-lg-offset-6
+                            .people__info-wrap        
+                                a(href="#").people__btn 
+                                    img(src="img/play.svg" alt="")
+                                .people__title.
+                                    Катя Милоненко
+                                .people__text.
+                                    Шаблоны проектирования — это способ решения периодически возникающих проблем. Точнее, это руководства по решению конкретных проблем.  
+
+section.special
+    .container
+        .row
+            .col-lg-8
+                .section-title.special__title Cпецпредложения
+                .special__text 
+                    p.
+                        Рассчитаем предложение под ваш коллектив 
+                        и бюджет. Подходим к потребностям клиентов 
+                        с пониманием, продумаем и просчитаем для вас все нюансы. 
+                    p.
+                        Поможем в организации бара или фуршета.
+                        Сделаем так, чтобы ваш праздник вдохновил 
+                        и запомнился сотрудникам. 
+                a(data-fancybox data-src="#pop-up" href="javascript:;").how-it__item-btn.special__btn Заказать рассчет              
+section.photo
+    .container
+        .section-title.photo__title Фотографии и видео
+        .row
+            .col-md-9.photo__main-wrap
+                .row
+                    .photo__item
+                        a(href="img/korporativ/gallery-1.jpg"  data-fancybox).photo__item-link
+                            img(src="img/korporativ/gallery-1.jpg" alt="").photo__image
+                    .photo__item
+                        a(data-fancybox href="https://www.youtube.com/watch?v=8D94uZPKQcA").photo__item-link
+                            img(src="img/korporativ/gallery-2.jpg" alt="").photo__image
+                            span.photo__item-video
+                                .photo__item-video-inner
+                                    img(src="img/play.svg" alt="")
+                                    span.photo__item-video-text.
+                                        Данное занятие мы очень сильно
+                                        посвятим методам    
+                    .photo__item
+                        a(href="img/korporativ/gallery-3.jpg" data-fancybox).photo__item-link
+                            img(src="img/korporativ/gallery-3.jpg" alt="").photo__image
+                    .photo__item
+                        .photo__item-text.photo__item-text--safe
+                            .photo__item-image
+                                img(src="img/Clown-Mask.png" alt="")
+                            .photo__item-title Весело
+                            .photo__item-info. 
+                                То, что творилось 
+                                на корпоративе, еще 
+                                долго будут обсуждать в офисе
+                    .photo__item
+                        a(href="img/korporativ/gallery-6.jpg" data-fancybox).photo__item-link
+                            img(src="img/korporativ/gallery-6.jpg" alt="").photo__image  
+            .col-md-3.photo__side   
+                .row
+                    .photo__item
+                        .photo__item-text.photo__item-text--top()
+                            .photo__item-image
+                                //- img(src="img/Confetti.png" alt="")
+                                img(src="img/Football-Helmet.png" alt="")
+                            .photo__item-title Безопасно
+                            .photo__item-info. 
+                                Специально обученные инструкторы следят за тем, чтобы никто случайно не травмировался
+                    .photo__item
+                        a(href="img/korporativ/gallery-4.jpg" data-fancybox).photo__item-link
+                            img(src="img/korporativ/gallery-4.jpg" alt="").photo__image 
+                    .photo__item
+                        a(href="img/korporativ/gallery-5.jpg" data-fancybox).photo__item-link
+                            img(src="img/korporativ/gallery-5.jpg" alt="").photo__image
+
+        .row
+            .col-md-5
+                .photo__item-link
+                    img(src="img/korporativ/gallery-7.jpg" alt="").photo__image 
+                    span.photo__under-text.
+                        Корпоративы в «Разгоне» уже оценили
+                    span.photo__logo
+                        img(src="img/comp-1.png" alt="")    
+                        img(src="img/comp-2.png" alt="")    
+                        img(src="img/comp-3.png" alt="")    
+            .col-md-7
+                a(href="img/korporativ/gallery-8.jpg" data-fancybox).photo__item-link
+                    img(src="img/korporativ/gallery-8.jpg" alt="").photo__image                                                      
+section.reserve.reserve--korporativ
+    .container.reserve__container
+        .reserve__info.reserve__info--top
+            .reserve__info-image
+                img(src="img/Confetti.png" alt="")
+            .reserve__info-title Активный отдых
+            .reserve__info-text.
+                Прыгать на батуте полезнее <br> 
+                для здоровья, чем играть <br>
+                на бильярде
+        .reserve__info.reserve__info--bottom
+            .reserve__info-image
+                img(src="img/Lego-Bricks.png" alt="")
+            .reserve__info-title Красочно
+            .reserve__info-text.
+                Наряды аниматоров и<br>
+                специальная зона парка<br>
+                оставят незабываемые<br>
+                впечатления на фото и<br>
+                видео
+        .row
+            .col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2   
+                form#reserveForm
+                    .reserve__wrapper            
+                        .reserve__title Забронировать время
+                        .reserve__form-group
+                            label.reserve__label Ваше имя
+                            input(type="text" placeholder="Например: Сергей" name="name").reserve__input
+                        .reserve__form-group
+                            label.reserve__label Эл.почта
+                            input(type="email" placeholder="Например: Сергей" name="email").reserve__input  
+                        .reserve__form-group
+                            label.reserve__label Телефон
+                            input(type="text" placeholder="+7 ___ ___-__-__" name="phone").reserve__input.js-phone
+                        .reserve__date
+                            .reserve__form-group.reserve__form-group--date
+                                label.reserve__label Дата
+                                input(type="text" placeholder="Дата" name="date").reserve__input.reserve__input--calendar.js-date
+                            .reserve__form-group.reserve__form-group--time
+                                label.reserve__label Время начала
+                                select.reserve__select
+                                    option 10:00
+                                    option 11:00
+                                    option 12:00
+                                    option 13:00
+                                    option 14:00
+                                    option 15:00
+                                    option 16:00
+                                    option 17:00
+                                    option 18:00
+                            .reserve__form-group.reserve__form-group--time
+                                label.reserve__label.reserve__label--people Количество человек
+                                select.reserve__select
+                                    option 1
+                                    option 2
+                                    option 3                   
+                                    option 4
+                                    option 5
+                                    option 6
+                    .reserve__total
+                        .reserve__total-bonus выгода: 3000 рублей
+                        .reserve__total-count Итого: 72 000 ₽
+                        button(type="submit").reserve__submit Забронировать время      
+                        .reserve__total-helper.
+                            Вы должны будете подписать правила безопасности парка. <br>
+                            Детей до 16 пускаем только вместе с родителями. От 16 до 18 — <br>
+                            с письменным разрешением от них. Мы пришлем на почту правила. <br>
+                            Вы можете их распечатать и подписать самостоятельно, чтобы не тормозить
+                            на входе.     
+section.map
+    .map__info
+        .map__info-title Мы ждем вас в гости
+        .map__info-group
+            .map__info-name Адрес
+            .map__info-text.
+                Нижний Новгород, ТРК "НЕБО", пл. Лядова <br>
+                Как добраться: <a href="#">На машине</a>, <a href="#">Пешком</a> 
+        .map__info-group
+            .map__info-name Звоните нам         
+            .map__info-text
+                a(href="#").map__phone +7 831 4-222-999
+        .map__info-group
+            .map__info-name Пишите нам письма
+            .map__info-text
+                a(href="#").map__mail razgon.nnov@gmail.com       
+    #map.map__wrapper    
+
+section.offers
+    .container.text-center
+        a(href="#").offers__link     А еще у нас есть акции

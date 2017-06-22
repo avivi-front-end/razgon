@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ie-detector.js"></script>
+    <script src="js/modernizr.js"></script><!--[if lt IE 7]>  <meta http-equiv="X-UA-Compatible" content="IE=edge"/> <![endif]-->
+  </head>
+  <div class="page-wrapper" id="page-wrapper">
+    <header class="wrapper header" id="header">
+      <div class="container">
+        <div class="header__wrapper"><a class="header__mobile-menu js-mobile-menu" href="#"><span></span></a><a class="header__logo" href="#"><img src="img/logo.svg" alt="logo"></a>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Подарочный сертификат</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Разгон-Уикэнд</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Корпоративы</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Школные группы</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Дни Рождения</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Акции</a></li>
+            </ul>
+          </nav>
+          <div class="header__info"><a class="header__phone" href="callto:+7 456 789-67-78 ">+7 456 789-67-78 </a>
+            <div class="header__time">Пн-Вс, с 9:00 до 22:00 </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page-body" id="page-body">
+      <div class="pop-up" style="display:none;" id="pop-up">
+        <div class="pop-up__title">Заказать рассчет</div>
+        <div class="pop-up__form">
+          <form id="pop-up-form">
+            <div class="reserve__form-group">
+              <label class="reserve__label">Ваше имя</label>
+              <input class="reserve__input" type="text" placeholder="Например: Сергей" name="name">
+            </div>
+            <div class="reserve__form-group">
+              <label class="reserve__label">Телефон</label>
+              <input class="reserve__input js-phone" type="text" placeholder="+7 ___ ___-__-__" name="phone">
+            </div>
+            <button class="reserve__submit pop-up__btn" type="submit">Отправить </button>
+            <div class="pop-up__helper">Менеджер перезвонит в течение 15 минут и уточнит все нюансы   </div>
+          </form>
+        </div>
+      </div>
+      <section class="top-info"><img class="top-info__mobile-img" src="img/main.jpg" alt="">
+        <video autoplay muted loop>
+          <source src="video/banner.mp4">
+        </video>
+        <div class="container">
+          <div class="top-info__title">Коропоратив в «Разгоне»</div>
+          <div class="top-info__sub-title">
+            отличный способ сплотить команду. Чтобы сделать вечер незабываемым, наши аниматоры разработали<br>
+            N программ и квестов для тимбилдинга. Только живые эмоции! Только чистый адреналин!
+          </div><a class="top-info__btn js-scroll" href="#reserveForm">Забронировать время</a>
+        </div>
+      </section>
+      <section class="how-it">
+        <div class="container">
+          <div class="how-it__title section-title">Как проходит мероприятие</div>
+          <div class="how-it__parts">
+            <div class="row">
+              <div class="how-it__item-wrapper"> 
+                <div class="how-it__item">  
+                  <div class="how-it__inner">
+                    <div class="how-it__item-title">Раздевалки и душевые</div>
+                    <div class="how-it__text">
+                      Чтобы подготовиться к корпоративу в «Разгоне», сотрудники
+                      переодеваются в спортивную одежду. Для этого мы построили
+                      просторные раздевалки, душевые и личные шкафчики для вещей+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="how-it__item-wrapper"> 
+                <div class="how-it__item">  
+                  <div class="how-it__inner">
+                    <div class="how-it__item-title">Разминка</div>
+                    <div class="how-it__text">
+                      Инструкторы батутного парка помогают разогреть участникам
+                      мышцы и суставы и настраивают на веселье. А еще они объясняют
+                      технику безопасности и с радостью отвечают на любые вопросы
+                    </div>
+                    <div class="how-it__images"><a class="how-it__images-link" href="img/how-it-1.jpg" data-fancybox><img src="img/how-it-1.jpg" alt=""></a><a class="how-it__images-link" href="img/how-it-2.jpg" data-fancybox><img src="img/how-it-2.jpg" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="how-it__item-wrapper"> 
+                <div class="how-it__item">  
+                  <div class="how-it__inner">
+                    <div class="how-it__item-title">Тимбилдинг</div>
+                    <div class="how-it__text">
+                      Крутые квесты и командные тренировки укрепляют дружбу
+                      в коллективе и оставляют сотрудникам незабываемые
+                      впечатления. Все развлечения в «Разгоне» надолго заряжают
+                      хорошим настроением и укрепляют корпоративный
+                      дух и командные ценности
+                    </div><a class="how-it__item-btn" data-fancybox data-src="#pop-up" href="javascript:;">Заказать расчёт     </a>
+                  </div>
+                </div>
+              </div>
+              <div class="how-it__item-wrapper"> 
+                <div class="how-it__item">  
+                  <div class="how-it__inner">
+                    <div class="how-it__item-title">Отдых</div>
+                    <div class="how-it__text">
+                      Вволю командообразовавшись, продолжаем веселиться
+                      за столиками со вкусной едой и качественными напитками. 
+                      Самое время отметить свои подвиги на батутном поприще 
+                      и вдохновиться для работы!                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="people">
+        <div class="people__slider js-people">
+          <div class="people__slide">
+            <div class="container people__container">
+              <div class="people__image"><img src="img/slide.jpg" alt=""></div>
+              <div class="row">
+                <div class="col-lg-5 col-lg-offset-6">
+                  <div class="people__info-wrap">       <a class="people__btn" href="#"> <img src="img/play.svg" alt=""></a>
+                    <div class="people__title">Катя Милоненко</div>
+                    <div class="people__text">
+                      Шаблоны проектирования — это способ решения периодически возникающих проблем. Точнее, это руководства по решению конкретных проблем.  
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="people__slide">
+            <div class="container people__container">
+              <div class="people__image"><img src="img/slide.jpg" alt=""></div>
+              <div class="row">
+                <div class="col-lg-5 col-lg-offset-6">
+                  <div class="people__info-wrap">       <a class="people__btn" href="#"> <img src="img/play.svg" alt=""></a>
+                    <div class="people__title">Катя Милоненко</div>
+                    <div class="people__text">
+                      Шаблоны проектирования — это способ решения периодически возникающих проблем. Точнее, это руководства по решению конкретных проблем.  
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="people__slide">
+            <div class="container people__container">
+              <div class="people__image"><img src="img/slide.jpg" alt=""></div>
+              <div class="row">
+                <div class="col-lg-5 col-lg-offset-6">
+                  <div class="people__info-wrap">       <a class="people__btn" href="#"> <img src="img/play.svg" alt=""></a>
+                    <div class="people__title">Катя Милоненко</div>
+                    <div class="people__text">
+                      Шаблоны проектирования — это способ решения периодически возникающих проблем. Точнее, это руководства по решению конкретных проблем.  
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="people__slide">
+            <div class="container people__container">
+              <div class="people__image"><img src="img/slide.jpg" alt=""></div>
+              <div class="row">
+                <div class="col-lg-5 col-lg-offset-6">
+                  <div class="people__info-wrap">       <a class="people__btn" href="#"> <img src="img/play.svg" alt=""></a>
+                    <div class="people__title">Катя Милоненко</div>
+                    <div class="people__text">
+                      Шаблоны проектирования — это способ решения периодически возникающих проблем. Точнее, это руководства по решению конкретных проблем.  
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="people__slide">
+            <div class="container people__container">
+              <div class="people__image"><img src="img/slide.jpg" alt=""></div>
+              <div class="row">
+                <div class="col-lg-5 col-lg-offset-6">
+                  <div class="people__info-wrap">       <a class="people__btn" href="#"> <img src="img/play.svg" alt=""></a>
+                    <div class="people__title">Катя Милоненко</div>
+                    <div class="people__text">
+                      Шаблоны проектирования — это способ решения периодически возникающих проблем. Точнее, это руководства по решению конкретных проблем.  
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="special">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="section-title special__title">Cпецпредложения</div>
+              <div class="special__text"> 
+                <p>
+                  Рассчитаем предложение под ваш коллектив 
+                  и бюджет. Подходим к потребностям клиентов 
+                  с пониманием, продумаем и просчитаем для вас все нюансы. 
+                </p>
+                <p>
+                  Поможем в организации бара или фуршета.
+                  Сделаем так, чтобы ваш праздник вдохновил 
+                  и запомнился сотрудникам. 
+                </p>
+              </div><a class="how-it__item-btn special__btn" data-fancybox data-src="#pop-up" href="javascript:;">Заказать рассчет              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="photo">
+        <div class="container">
+          <div class="section-title photo__title">Фотографии и видео</div>
+          <div class="row">
+            <div class="col-md-9 photo__main-wrap">
+              <div class="row">
+                <div class="photo__item"><a class="photo__item-link" href="img/korporativ/gallery-1.jpg" data-fancybox><img class="photo__image" src="img/korporativ/gallery-1.jpg" alt=""></a></div>
+                <div class="photo__item"><a class="photo__item-link" data-fancybox href="https://www.youtube.com/watch?v=8D94uZPKQcA"><img class="photo__image" src="img/korporativ/gallery-2.jpg" alt=""><span class="photo__item-video">
+                      <div class="photo__item-video-inner"><img src="img/play.svg" alt=""><span class="photo__item-video-text">
+                          Данное занятие мы очень сильно
+                          посвятим методам    </span></div></span></a></div>
+                <div class="photo__item"><a class="photo__item-link" href="img/korporativ/gallery-3.jpg" data-fancybox><img class="photo__image" src="img/korporativ/gallery-3.jpg" alt=""></a></div>
+                <div class="photo__item">
+                  <div class="photo__item-text photo__item-text--safe">
+                    <div class="photo__item-image"><img src="img/Clown-Mask.png" alt=""></div>
+                    <div class="photo__item-title">Весело</div>
+                    <div class="photo__item-info">
+                      То, что творилось 
+                      на корпоративе, еще 
+                      долго будут обсуждать в офисе
+                    </div>
+                  </div>
+                </div>
+                <div class="photo__item"><a class="photo__item-link" href="img/korporativ/gallery-6.jpg" data-fancybox><img class="photo__image" src="img/korporativ/gallery-6.jpg" alt=""></a></div>
+              </div>
+            </div>
+            <div class="col-md-3 photo__side">  
+              <div class="row">
+                <div class="photo__item">
+                  <div class="photo__item-text photo__item-text--top">
+                    <div class="photo__item-image"><img src="img/Football-Helmet.png" alt=""></div>
+                    <div class="photo__item-title">Безопасно</div>
+                    <div class="photo__item-info">Специально обученные инструкторы следят за тем, чтобы никто случайно не травмировался</div>
+                  </div>
+                </div>
+                <div class="photo__item"><a class="photo__item-link" href="img/korporativ/gallery-4.jpg" data-fancybox><img class="photo__image" src="img/korporativ/gallery-4.jpg" alt=""></a></div>
+                <div class="photo__item"><a class="photo__item-link" href="img/korporativ/gallery-5.jpg" data-fancybox><img class="photo__image" src="img/korporativ/gallery-5.jpg" alt=""></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <div class="photo__item-link"><img class="photo__image" src="img/korporativ/gallery-7.jpg" alt=""><span class="photo__under-text">Корпоративы в «Разгоне» уже оценили</span><span class="photo__logo"><img src="img/comp-1.png" alt=""><img src="img/comp-2.png" alt=""><img src="img/comp-3.png" alt=""></span></div>
+            </div>
+            <div class="col-md-7"><a class="photo__item-link" href="img/korporativ/gallery-8.jpg" data-fancybox><img class="photo__image" src="img/korporativ/gallery-8.jpg" alt=""></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="reserve reserve--korporativ">
+        <div class="container reserve__container">
+          <div class="reserve__info reserve__info--top">
+            <div class="reserve__info-image"><img src="img/Confetti.png" alt=""></div>
+            <div class="reserve__info-title">Активный отдых</div>
+            <div class="reserve__info-text">
+              Прыгать на батуте полезнее <br> 
+              для здоровья, чем играть <br>
+              на бильярде
+            </div>
+          </div>
+          <div class="reserve__info reserve__info--bottom">
+            <div class="reserve__info-image"><img src="img/Lego-Bricks.png" alt=""></div>
+            <div class="reserve__info-title">Красочно</div>
+            <div class="reserve__info-text">
+              Наряды аниматоров и<br>
+              специальная зона парка<br>
+              оставят незабываемые<br>
+              впечатления на фото и<br>
+              видео
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">  
+              <form id="reserveForm">
+                <div class="reserve__wrapper">           
+                  <div class="reserve__title">Забронировать время</div>
+                  <div class="reserve__form-group">
+                    <label class="reserve__label">Ваше имя</label>
+                    <input class="reserve__input" type="text" placeholder="Например: Сергей" name="name">
+                  </div>
+                  <div class="reserve__form-group">
+                    <label class="reserve__label">Эл.почта</label>
+                    <input class="reserve__input" type="email" placeholder="Например: Сергей" name="email">
+                  </div>
+                  <div class="reserve__form-group">
+                    <label class="reserve__label">Телефон</label>
+                    <input class="reserve__input js-phone" type="text" placeholder="+7 ___ ___-__-__" name="phone">
+                  </div>
+                  <div class="reserve__date">
+                    <div class="reserve__form-group reserve__form-group--date">
+                      <label class="reserve__label">Дата</label>
+                      <input class="reserve__input reserve__input--calendar js-date" type="text" placeholder="Дата" name="date">
+                    </div>
+                    <div class="reserve__form-group reserve__form-group--time">
+                      <label class="reserve__label">Время начала</label>
+                      <select class="reserve__select">
+                        <option>10:00</option>
+                        <option>11:00</option>
+                        <option>12:00</option>
+                        <option>13:00</option>
+                        <option>14:00</option>
+                        <option>15:00</option>
+                        <option>16:00</option>
+                        <option>17:00</option>
+                        <option>18:00</option>
+                      </select>
+                    </div>
+                    <div class="reserve__form-group reserve__form-group--time">
+                      <label class="reserve__label reserve__label--people">Количество человек</label>
+                      <select class="reserve__select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3                   </option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="reserve__total">
+                  <div class="reserve__total-bonus">выгода: 3000 рублей</div>
+                  <div class="reserve__total-count">Итого: 72 000 ₽</div>
+                  <button class="reserve__submit" type="submit">Забронировать время      </button>
+                  <div class="reserve__total-helper">
+                    Вы должны будете подписать правила безопасности парка. <br>
+                    Детей до 16 пускаем только вместе с родителями. От 16 до 18 — <br>
+                    с письменным разрешением от них. Мы пришлем на почту правила. <br>
+                    Вы можете их распечатать и подписать самостоятельно, чтобы не тормозить
+                    на входе.     
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <div class="map__info">
+          <div class="map__info-title">Мы ждем вас в гости</div>
+          <div class="map__info-group">
+            <div class="map__info-name">Адрес</div>
+            <div class="map__info-text">
+              Нижний Новгород, ТРК "НЕБО", пл. Лядова <br>
+              Как добраться: <a href="#">На машине</a>, <a href="#">Пешком</a> 
+            </div>
+          </div>
+          <div class="map__info-group">
+            <div class="map__info-name">Звоните нам         </div>
+            <div class="map__info-text"><a class="map__phone" href="#">+7 831 4-222-999</a></div>
+          </div>
+          <div class="map__info-group">
+            <div class="map__info-name">Пишите нам письма</div>
+            <div class="map__info-text"><a class="map__mail" href="#">razgon.nnov@gmail.com       </a></div>
+          </div>
+        </div>
+        <div class="map__wrapper" id="map">   </div>
+      </section>
+      <section class="offers">
+        <div class="container text-center"><a class="offers__link" href="#">    А еще у нас есть акции</a></div>
+      </section>
+    </div>
+    <footer class="wrapper footer" id="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Корпоратив</a></li>
+              <li class="footer__menu-item">   <a class="footer__menu-link" href="#">День рождения</a></li>
+              <li class="footer__menu-item">     <a class="footer__menu-link" href="#">Разгон-уикэнд</a></li>
+            </ul>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Подарочный сертификат</a></li>
+              <li class="footer__menu-item">   <a class="footer__menu-link" href="#">Школьная группа</a></li>
+              <li class="footer__menu-item">     <a class="footer__menu-link" href="#">Разовые занятия       </a></li>
+            </ul>
+          </div><a class="footer__logo" href="#">                <img src="img/logo.svg" alt="logo"></a>
+          <div class="footer__copyright">
+            <div class="footer__social"><a class="footer__social-link footer__social-link--vk" href="#"> </a><a class="footer__social-link footer__social-link--fb" href="#"></a><a class="footer__social-link footer__social-link--tw" href="#">    </a></div>
+            <div class="footer__made-by"><span>Спроектировано  и реализовано</span><a class="footer__made-link" href="#">True Digital Agency</a>и <a class="footer__made-link" href="#">ЛидМашиной</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/libs.js"></script>
+  <script src="js/datepicker-ru.js"></script>
+  <script src="js/common.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQRhqphYzT6Zhq7nsruc1YxwXvavio8R0&amp;callback=initMap"></script>
+  <script src="//localhost:35729/livereload.js"></script>
+</html>

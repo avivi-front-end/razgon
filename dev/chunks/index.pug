@@ -1,4 +1,7 @@
-section.top-info(style="background:url(img/main.jpg) no-repeat;background-size:cover;")
+section.top-info
+    img(src="img/main.jpg" alt="").top-info__mobile-img
+    video(autoplay muted loop)
+        source(src="video/banner.mp4")
     .container
         .top-info__title День рождения в парке
         .top-info__sub-title.
@@ -299,7 +302,7 @@ section.package
                                     +icon ('cart')                
             .col-md-3
                 .package__sert
-                    img(src="img/sertifiicate.jpg" alt="").package__sert-image   
+                    img(src="img/sertifiicate.png" alt="").package__sert-image   
                     a(href="#").package__sert-name.
                         Подарочный <br>
                         Сертификат 
@@ -333,7 +336,7 @@ section.photo
                     .photo__item
                         .photo__item-text.photo__item-text--safe
                             .photo__item-image
-                                +icon('left-text')
+                                img(src="img/Football-Helmet.png" alt="")
                             .photo__item-title Безопасно
                             .photo__item-info. 
                                 Это абсолютно безопасно — каждую компанию 
@@ -347,8 +350,8 @@ section.photo
                     .photo__item
                         .photo__item-text.photo__item-text--top()
                             .photo__item-image
-                                +icon('top-text')
-                            .photo__item-title Уникально
+                                img(src="img/Confetti.png" alt="")
+                            .photo__item-title Активный отдых
                             .photo__item-info. 
                                 Единственный в городе день рождения на воде: водные горки
                                 и бассейны     
@@ -373,12 +376,12 @@ section.reserve
     .container.reserve__container
         .reserve__info.reserve__info--top
             .reserve__info-image
-                +icon('reserve-1')
-            .reserve__info-title Красиво
+                img(src="img/Lego-Bricks.png" alt="")
+            .reserve__info-title Красочно
             .reserve__info-text Красиво оформленная зона,<br> аквагрим 
         .reserve__info.reserve__info--bottom
             .reserve__info-image
-                +icon('reserve-2')
+                img(src="img/Clown-Mask.png" alt="")
             .reserve__info-title Весело
             .reserve__info-text.
                 Великолепная <br>

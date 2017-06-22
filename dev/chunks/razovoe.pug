@@ -1,0 +1,213 @@
+section.top-info
+    img(src="img/main.jpg" alt="").top-info__mobile-img
+    video(autoplay muted loop)
+        source(src="video/banner.mp4")
+    .container
+        .top-info__title Батутный зал от 500 ₽ час
+        .top-info__sub-title.
+            Огромный выбор новых батутов  для детей и взрослых. Опытные инструкторы следят за вашей безопасностью
+        a(href="#reserveForm").top-info__btn.js-scroll Купить билет
+
+section.razovoe
+    .container 
+        .row
+            .col-md-8
+                .section-title.razovoe__title Много чего интересного
+                .razovoe__text
+                    p.
+                        В «Разгоне» мы создаем качественно новый уровень развлечений, так как используем только лучшее оборудование. Уделяем максимальное внимание профессиональным спортсменам и новичкам. У нас больше ста батутов для всех желающих и огромная зона для тренировки сноубордистов. 
+                    p.
+                        Вы — профессиональный спортсмен, который хочет разучить новый трюк? 
+                    p.
+                        Или ещё никогда в жизни не прыгали на батуте?
+                    p.
+                        Наш парк открыт для всех желающих. <a href="#">Добро пожаловать!</a>
+                .razovoe__list
+                    .razovoe__list-item
+                        .razovoe__list-top 100
+                        .razovoe__list-bottom новых батутов
+                    .razovoe__list-item
+                        .razovoe__list-top 300
+                        .razovoe__list-bottom Человек могут прыгать одновременно
+                    .razovoe__list-item
+                        .razovoe__list-top
+                            img(src="img/razovoe_1.png" alt="")
+                        .razovoe__list-bottom  Сетки от «AirMax» — самые крутые в мире                 
+            .col-md-3.col-md-offset-1
+                .razovoe__other-info
+                    .razovoe__other-img
+                        img(src="img/razovoe.jpg" alt="")
+                    .razovoe__other-text.
+                        Столы для мини-футбола 
+                        и другие игры чтобы перевести дыхание после прыжков 
+section.price
+    .container
+        .section-title.price__title Тарифы
+        .package__table-wrapper                
+            table.package__table
+                tr
+                    th  
+                    th 1 час
+                    th 2 часа
+                    th безлимит на день
+
+                tr.package__table-row
+                    td.package__table-name.package__table-name--price Цена в будние дни  
+                    td.package__table-item 500
+                    td.package__table-item 650
+                    td.package__table-item 750 р
+
+                tr.package__table-row
+                    td.package__table-name.package__table-name--price Цена в выходной
+                    td.package__table-item 600 р
+                    td.package__table-item 750
+                    td.package__table-item 950
+                tr.package__table-footer 
+                    td.package__table-footer-name
+
+                    td.package__table-footer-item
+                        a(href="#" data-price="1hour").package__table-link.js-to-form
+                            +icon ('cart')
+                    td.package__table-footer-item
+                        a(href="#" data-price="2hour").package__table-link.js-to-form
+                            +icon ('cart') 
+                    td.package__table-footer-item
+                        a(href="#" data-price="bezlim").package__table-link.js-to-form
+                            +icon ('cart') 
+
+section.photo
+    .container
+        .section-title.photo__title Фотографии и видео
+        .row
+            .col-md-9.photo__main-wrap
+                .row
+                    .photo__item
+                        a(href="img/razovoe/gallery-1.jpg"  data-fancybox).photo__item-link
+                            img(src="img/razovoe/gallery-1.jpg" alt="").photo__image
+                    .photo__item
+                        a(data-fancybox href="https://www.youtube.com/watch?v=8D94uZPKQcA").photo__item-link
+                            img(src="img/razovoe/gallery-2.jpg" alt="").photo__image
+                            span.photo__item-video
+                                .photo__item-video-inner
+                                    img(src="img/play.svg" alt="")
+                                    span.photo__item-video-text.
+                                        Данное занятие мы очень сильно
+                                        посвятим методам    
+                    .photo__item
+                        a(href="img/razovoe/gallery-3.jpg" data-fancybox).photo__item-link
+                            img(src="img/razovoe/gallery-3.jpg" alt="").photo__image
+                    .photo__item
+                        .photo__item-text.photo__item-text--active
+                            .photo__item-image
+                                img(src="img/Confetti.png" alt="")
+                            .photo__item-title Активный отдых
+                            .photo__item-info.
+                                Ощущения от высоких 
+                                прыжков ни с чем не сравнить
+                    .photo__item
+                        a(href="img/razovoe/gallery-6.jpg" data-fancybox).photo__item-link
+                            img(src="img/razovoe/gallery-6.jpg" alt="").photo__image  
+            .col-md-3.photo__side   
+                .row
+                    .photo__item
+                        .photo__item-text.photo__item-text--top()
+                            .photo__item-image
+                                img(src="img/Clown-Mask.png" alt="")
+                            .photo__item-title Весело
+                            .photo__item-info. 
+                                Захватывающие дух прыжки и море эмоций надолго останутся в памяти
+                    .photo__item
+                        a(href="img/razovoe/gallery-4.jpg" data-fancybox).photo__item-link
+                            img(src="img/razovoe/gallery-4.jpg" alt="").photo__image 
+                    .photo__item
+                        a(href="img/razovoe/gallery-5.jpg" data-fancybox).photo__item-link
+                            img(src="img/razovoe/gallery-5.jpg" alt="").photo__image
+
+        .row
+            .col-md-5
+                .photo__item-link
+                    img(src="img/razovoe/gallery-7.jpg" alt="").photo__image 
+                    
+            .col-md-7
+                a(href="img/razovoe/gallery-8.jpg" data-fancybox).photo__item-link
+                    img(src="img/razovoe/gallery-8.jpg" alt="").photo__image                                                      
+section.reserve.reserve--razovoe
+    .container.reserve__container
+        .reserve__info.reserve__info--top
+            .reserve__info-image
+                img(src="img/Lego-Bricks.png" alt="")
+            .reserve__info-title Красочно
+            .reserve__info-text Красиво оформленная зона,<br> аквагрим 
+        .reserve__info.reserve__info--bottom
+            .reserve__info-image
+                img(src="img/Football-Helmet.png" alt="")
+            .reserve__info-title Безопасно
+            .reserve__info-text.
+                За вами постоянно следят<br>
+                специально обученные<br>
+                инструкторы
+        .row
+            .col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2   
+                form#reserveForm
+                    .reserve__wrapper            
+                        .reserve__title Забронировать время
+                        .reserve__form-group
+                            label.reserve__label Ваше имя
+                            input(type="text" placeholder="Например: Сергей" name="name").reserve__input
+                        .reserve__form-group
+                            label.reserve__label Эл.почта
+                            input(type="email" placeholder="Например: Сергей" name="email").reserve__input  
+                        .reserve__form-group
+                            label.reserve__label Телефон
+                            input(type="text" placeholder="+7 ___ ___-__-__" name="phone").reserve__input.js-phone
+                        .reserve__date
+                            .reserve__form-group.reserve__form-group--date
+                                label.reserve__label Дата
+                                input(type="text" placeholder="Дата" name="date").reserve__input.reserve__input--calendar.js-date
+                            .reserve__form-group.reserve__form-group--price
+                                label.reserve__label Тариф
+                                select.reserve__select#price
+                                    option(value="1hour") 1 час
+                                    option(value="2hour") 2 часа
+                                    option(value="bezlim") безлимит
+                            .reserve__form-group.reserve__form-group--time
+                                label.reserve__label.reserve__label--people Количество человек
+                                select.reserve__select
+                                    option 1
+                                    option 2
+                                    option 3                   
+                                    option 4
+                                    option 5
+                                    option 6
+
+                        
+                    .reserve__total
+                        .reserve__total-count Итого: 72 000 ₽
+                        button(type="submit").reserve__submit Забронировать время      
+                        .reserve__total-helper.
+                            Вы должны будете подписать правила безопасности парка. <br>
+                            Детей до 16 пускаем только вместе с родителями. От 16 до 18 — <br>
+                            с письменным разрешением от них. Мы пришлем на почту правила. <br>
+                            Вы можете их распечатать и подписать самостоятельно, чтобы не тормозить
+                            на входе.     
+section.map
+    .map__info
+        .map__info-title Мы ждем вас в гости
+        .map__info-group
+            .map__info-name Адрес
+            .map__info-text.
+                Нижний Новгород, ТРК "НЕБО", пл. Лядова <br>
+                Как добраться: <a href="#">На машине</a>, <a href="#">Пешком</a> 
+        .map__info-group
+            .map__info-name Звоните нам         
+            .map__info-text
+                a(href="#").map__phone +7 831 4-222-999
+        .map__info-group
+            .map__info-name Пишите нам письма
+            .map__info-text
+                a(href="#").map__mail razgon.nnov@gmail.com       
+    #map.map__wrapper    
+
+section.offers
+    .container.text-center
+        a(href="#").offers__link     А еще у нас есть акции
